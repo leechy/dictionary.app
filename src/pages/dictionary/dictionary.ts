@@ -7,8 +7,12 @@ import { NavController } from 'ionic-angular';
 })
 export class DictionaryPage {
 
-  constructor(public navCtrl: NavController) {
+  searchbar: HTMLElement;
 
+  constructor(public navCtrl: NavController) { }
+
+  ionViewDidEnter() {
+    console.log(this.searchbar);
   }
 
 }

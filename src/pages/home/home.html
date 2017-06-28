@@ -1,11 +1,59 @@
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+
+  <button ion-button color="light">
+    <ion-icon name="settings" align-right></ion-icon>
+  </button>
+
+
+
+  <h1>Люксембургско-<br>Български речник</h1>
+
+  <p>Внимание! Речника не е напълно готов в момента, ако някоя дума няма превод на български, то тя ще бъде показан английския вариант.</p>
+
+  <ion-searchbar background="primary" (click)="onSearchbarClick()" placeholder="{{ 'Search in dictionary' | translate }}">
+  </ion-searchbar>
+
+  <h3>Фраза на деня</h3>
+
+  <ion-card color="light">
+    <ion-card-header no-margin>Mäi Brudder schafft als Elektriker.</ion-card-header>
+    <ion-card-content>
+      <p>Мой брат работает электриком.</p>
+    </ion-card-content>
+  </ion-card>
+
+  <h3>Любими и често търсени думи</h3>
+
+  <ion-segment [(ngModel)]="favoriteList" size="small">
+    <ion-segment-button value="favorites">
+      <ion-icon name="heart"></ion-icon>
+    </ion-segment-button>
+    <ion-segment-button value="recent">
+      <ion-icon name="time"></ion-icon>
+    </ion-segment-button>
+  </ion-segment>
+
+  <div [ngSwitch]="favoriteList">
+    <ion-list *ngSwitchCase="'favorites'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="img/thumbnail-puppy-1.jpg">
+        </ion-thumbnail>
+        <h2>Ruby</h2>
+      </ion-item>
+      ...
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'recent'">
+
+      <ion-card color="light">
+        <ion-card-header no-margin>Mäi Brudder schafft als Elektriker.</ion-card-header>
+        <ion-card-content>
+          <p>Мой брат работает электриком.</p>
+        </ion-card-content>
+      </ion-card>
+
+    </ion-list>
+  </div>
+
 </ion-content>
