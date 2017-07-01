@@ -1,0 +1,10 @@
+.tabs {
+  &.tabs-md {
+    .tab-button {
+      min-height: 4rem;
+    }
+    .tab-button-text {
+      display: none;
+    }
+  }
+}

@@ -4,6 +4,17 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+
+  <ion-list>
+    <button ion-item *ngFor="let category of phraseCollection">
+        <ion-card-header no-margin no-padding padding-bottom>
+          {{ category.lu }} <span>({{ category.phrases.length }})</span>
+        </ion-card-header>
+        <ion-card-content no-padding>
+          <p>{{ category[common.lang] }}</p>
+        </ion-card-content>
+    </button>
+  </ion-list>
 
 </ion-content>

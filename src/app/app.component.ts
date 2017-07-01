@@ -7,6 +7,8 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { TranslateService } from 'ng2-translate';
 
+import { common } from './common';
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -21,9 +23,9 @@ export class MyApp {
       splashScreen.hide();
 
       // this language will be used as a fallback when a translation isn't found in the current language
-      translate.setDefaultLang('en');
+      translate.setDefaultLang(common.langFallback);
       // the lang to use, if the lang isn't available, it will use the current loader to get them
-      translate.use('bg');
+      translate.use(common.lang);
     });
   }
 }

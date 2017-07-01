@@ -12,7 +12,7 @@ export class DictionaryPage {
   constructor(public navCtrl: NavController) { }
 
   ionViewDidEnter() {
-    console.log(this.searchbar);
+    // console.log(this.searchbar);
   }
 
 }

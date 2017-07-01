@@ -18,18 +18,18 @@ page-home {
     margin-top: 3.6rem;
   }
 
-  .card-ios,
-  .card-md {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-  }
-
-  ion-card-content {
-    text-align: right;
-  }
-
   ion-segment {
     margin-bottom: 8px;
   }
+}
+
+.card-ios,
+.card-md {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+ion-card-content {
+  text-align: right;
 }
