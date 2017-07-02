@@ -1,26 +1,19 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+# Luxembourgish-Russian and Bulgarian Dictionary projects
 
-## How to use this template
+Based on [Ionic](http://ionicframework.com/docs/) to build mobile apps in the future.
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+The main goal of this project is to build a searchable database of most of Luxembourgish words with Russian and/or Bulgarian translation.
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+Almost all of the Luxembourgish dictionaries have only French, German or English translations. We thrive to add Russian and Bulgarian to that list.
 
-### With the Ionic CLI:
+## Build on your machine
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+To build the project, you should have [Node.js](https://nodejs.org/en/) installed. Then run `npm install` and `ionic serve`.
 
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myTabs tabs
-```
+## Dictionary database
 
-Then, to run it, cd into `myTabs` and run:
+For now, Dictionary and a Phrasebook are stored in [src/assets/dictionary](./src/assets/dictionary/) folder.
 
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
+## Participation
 
-Substitute ios for android if not on a Mac.
-
+If you want to contribute or take part in the project somehow, just drop me a mail at [leechy@leechy.ru](mailto:leechy@leechy.ru).
